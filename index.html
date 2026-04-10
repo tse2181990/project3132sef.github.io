@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线学习系统</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2563eb; }
+        .badge {
+            display: inline-block;
+            background: #e5e7eb;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 8px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tech {
+            background: #f3f4f6;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .btn:hover { background: #1d4ed8; }
+        hr { margin: 30px 0; }
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 在线学习系统</h1>
+        <p>基于 Spring Boot 的在线学习平台，支持课程讲座管理、投票系统和用户权限管理。</p>
+        
+        <div class="tech-stack">
+            <span class="tech">Spring Boot 3.x</span>
+            <span class="tech">Spring Security</span>
+            <span class="tech">Spring Data JPA</span>
+            <span class="tech">H2/MySQL</span>
+            <span class="tech">Gradle</span>
+        </div>
+
+        <h2>✨ 功能特性</h2>
+        <ul>
+            <li>📚 讲座管理 - 创建、编辑、删除讲座，支持附件上传</li>
+            <li>🗳️ 投票系统 - 创建投票、用户投票、实时结果</li>
+            <li>👥 用户管理 - 注册登录、角色权限控制</li>
+            <li>💬 评论功能 - 讲座和投票的评论系统</li>
+        </ul>
+
+        <h2>🚀 快速开始</h2>
+        <pre><code>git clone https://github.com/你的用户名/仓库名.git
+cd 仓库名
+./gradlew bootRun</code></pre>
+
+        <h2>📁 项目结构</h2>
+        <pre><code>src/main/java/hkmu/wadd/
+├── controller/     # 控制器层
+├── dao/           # 数据访问层
+├── service/       # 服务层
+├── model/         # 实体类
+├── config/        # 配置类
+└── exception/     # 自定义异常</code></pre>
+
+        <h2>🔧 部署方式</h2>
+        <p>本项目是 Spring Boot 后端应用，<strong>无法在 GitHub Pages 上运行</strong>。请使用以下平台部署：</p>
+        <ul>
+            <li><strong>Railway</strong> - <a href="https://railway.app" target="_blank">railway.app</a>（推荐，简单免费）</li>
+            <li><strong>Render</strong> - <a href="https://render.com" target="_blank">render.com</a></li>
+            <li><strong>Fly.io</strong> - <a href="https://fly.io" target="_blank">fly.io</a></li>
+        </ul>
+
+        <hr>
+
+        <p>📖 详细文档请查看 <a href="README.md">README.md</a></p>
+        <p>⭐ 如果这个项目对你有帮助，请给个 Star！</p>
+    </div>
+</body>
+</html>
