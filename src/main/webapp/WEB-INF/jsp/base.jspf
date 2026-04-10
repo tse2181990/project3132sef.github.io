@@ -1,0 +1,8 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c"        uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt"      uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="spring"   uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="sec"      uri="http://www.springframework.org/security/tags" %>
+
+<fmt:setLocale value="${param.lang != null ? param.lang : (sessionScope['org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE'] != null ? sessionScope['org.springframework.web.servlet.i18n.SessionLocaleResolver.LOCALE'] : 'en')}"/>
+<fmt:setBundle basename="messages"/>
